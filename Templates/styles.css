@@ -119,23 +119,19 @@ body {
   margin: 15px auto 20px auto;
   width: 40px;
   height: 40px;
-  background-blend-mode: color-burn;
   background-color: var(--dark1);
   background-size: cover;
   border-radius: 100%;
   border: 3px solid var(--dark4);
 }
-.js-avatar div img:hover {
-  background-color: red;
-}
 .js-avatar img {
 width:100%;
-filter: brightness(0.5);
+background-blend-mode: color-burn;
 transition: all ease 0.3s;
 }
 .js-avatar img:hover {
   width:100%;
-  filter: none;
+  opacity: 0.75;
   }
 .it-name {
     position: relative;
