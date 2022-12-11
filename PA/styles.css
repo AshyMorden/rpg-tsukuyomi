@@ -1,3 +1,43 @@
+body {background:#232323;}
+a:any-link {
+    text-decoration: none;
+}
+
+:root {
+	--bgcolor: #232323;
+  --dark1: #171717;
+  --dark2: #272727;
+  --dark3: #373737;
+  --dark4: #202020;
+  --accent: #a24e35;
+  --subcent: #513a29;
+  --tricent: #9e6148;
+  --spungold: #76563e;
+  --textcolor: #8a8a8a; 
+}
+
+.text-accent {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 16px;
+	color: var(--accent);
+}
+.text-subcent {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--dark3);
+}
+
 .pa {
     width: 1100px;
 }
@@ -33,6 +73,7 @@
     flex: .58 1 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
+    border-radius: 16px 0px 0px 0px;
     align-self: auto;
     background: #1C1C1C;
     height: 100%;
@@ -42,14 +83,15 @@
     -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
-    -webkit-flex: .42 1 auto;
-    -ms-flex: .42 1 auto;
-    flex: .42 1 auto;
+    -webkit-flex: .42 1;
+    -ms-flex: .42 1;
+    flex: .42 1;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
     background: #171717;
     height: 100%;
+    border-radius: 0px 16px 0px 0px;
 }
 
 .pa-rp-event {
@@ -69,10 +111,14 @@
     flex-wrap: wrap;
     align-items: center;
     width: 120px;
-    box-sizing: border-box;
+    box-sizing: content-box;
     align-items: inherit;
     position: relative;
     margin: auto;
+}
+
+.pa-rp-event{
+    text-align: center;
 }
 
 .pa-img-event {
@@ -102,11 +148,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: red;
     width: 44px;
     height: 44px;
     flex: 0 0 auto;
-    margin: 4px;
+    margin: auto;
+    padding: 8px;
+    color: var(--dark3);
 }
 .pa-icon::before {
     content: " ";
@@ -125,5 +172,86 @@
 }
 .rp-events>* {
     flex: 1 1 80px;
-    border: 4mm ridge rgba(211, 220, 50, .6);
+    margin: 4px;
+    flex-basis: auto;
+    height: 60px;
+    background: #171717;
+    width: 118px;
+    border: 2px solid #222222;
+}
+.rpevents-feat {
+    position: relative;
+    width: auto;
+    height: 40px;
+    font-size: 12px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 1;
+    -moz-opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.rpevents-feat:hover {
+    width: auto;
+    height: 40px;
+    opacity: 0.75;
+}
+
+.rpevents-feat h1 {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--textcolor);
+}
+.text-intro-before {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: var(--textcolor);
+}
+
+.text-intro-logo {
+font-family: 'Ninja Naruto';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+color: var(--accent);
+}
+.text-intro-baseline {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 19px;
+text-transform: uppercase;
+
+color: #A24E35;
+}
+.text-intro-lore {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: justify;
+color: var(--textcolor);
+}
+.pa-intro div{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    margin: 10px 0px 10px 20px;
+    padding: 0px 30px 0px 0px;
+    overflow-y: scroll;
 }
