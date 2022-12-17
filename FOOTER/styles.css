@@ -122,7 +122,7 @@ a:any-link {
     gap: 86px;
     align-items: flex-start;
     flex-direction: row;
-    padding: 256px 48px 0px 48px;
+    padding: 246px 0px 0px 48px;
     align-content: center;
 }
 .bstats-title {
