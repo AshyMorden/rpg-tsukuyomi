@@ -1,0 +1,679 @@
+body {background:#232323;}
+a:any-link {
+    text-decoration:none;
+}
+
+:root {
+	--bgcolor: #232323;
+    --dark1: #171717;
+    --dark2: #272727;
+    --dark3: #373737;
+    --dark4: #202020;
+    --accent: #a24e35;
+    --subcent: #513a29;
+    --tricent: #9e6148;
+    --spungold: #76563e;
+    --textcolor: #8a8a8a; 
+
+    --akatsuki: #D45C4C;
+    --ototsuki: #B5CBDE;
+    --nukenin: #907AAB;
+    --shinobi: #BD845C;
+}
+
+.akatsuki {
+    color: var(--akatsuki);
+}
+.ototsuki {
+    color: var(--ototsuki);
+}
+.nukenin {
+    color: var(--nukenin);
+}
+.shinobi {
+    color: var(--shinobi);
+}
+
+.text-accent {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--accent);
+}
+.text-jp {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--dark3);
+}
+.text-subcent {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--textcolor);
+}
+.footer {
+    width: 1200px;
+    height: auto;
+    background-image: url('https://i.ibb.co/CvCf2gK/footer.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 50px 52px 90px 52px;
+}
+.footer-end {
+    margin: 64px 0px 24px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    height: auto;
+}
+.container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    background: var(--dark4);
+    height: 100%;
+    border-radius: 0px 16px 0px 0px;
+}
+
+.bstats-grp {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    text-align: center;
+    width: 24%;
+    line-height: 44px;
+    color: var(--accent);
+    text-align: center;
+}
+
+.bstats-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 86px;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 256px 48px 0px 48px;
+    align-content: center;
+}
+.bstats-title {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px;
+    width: fit-content;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: #1C1C1C;
+    border: 2px solid #232323;
+    border-radius: 2px;
+}
+.bstats-1 {
+	box-sizing: border-box;
+	width: 200px;
+	position: relative;
+}
+
+.bstats-links {
+	margin: 30px 0px 20px 0px;
+	line-height: 200%;
+}
+
+.bstats-links a {
+	display: block;
+    font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: var(--accent);
+}
+
+.bstats-links a::before {
+    font-family: 'Font Awesome 6 Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 8px;
+    text-transform: uppercase;
+    color: var(--subcent);
+}
+
+.bs-last-click::before { content: "\f06e"; }
+.bs-mem-list::before { content: "\f504"; }
+.bs-active-topics::before { content: "\f71f"; }
+.bs-top-10::before { content: "\f005"; }
+.bs-mod-team::before { content: "\f520"; }
+
+.bstats-newest-reg {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 0.08em;
+    background: #1C1C1C;
+    border: 2px solid #232323;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.bstats-newest-reg b {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    
+    text-align: justify;
+    text-transform: uppercase;
+    
+    color: #907AAB;
+}
+
+.bstats-2 {
+	width: 380px;
+	position: relative;
+	margin: 0px 40px;
+}
+
+.bstats-online-now {
+	margin: 30px 0px;
+	font-size: 21px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 120%;
+	text-transform: lowercase;
+	text-shadow: 0px 0px 10px #584d44a6;
+}
+
+.bstats-online-nstats {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px 0px;
+    border-top: border: 1px solid #777777;
+    border-top: 1px solid var(--bgcolor);
+    border-bottom: 1px solid var(--bgcolor);
+}
+
+.bstats-online-nstats span {
+	margin-right: 10px;
+}
+
+.bstats-online-24 {
+	font-size: 10px;
+	font-family: Poppins;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 20px 0px;
+	text-align: justify;
+	line-height: 150%;
+	text-shadow: 0px 0px 5px #584d44a6;
+}
+
+.bs3-box {
+	color: var(--shell);
+	width: 70px;
+	height: 70px;
+	border: 1px solid #988c83;
+	background: #5d544b7a;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 8px;
+	font-family: Poppins;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.affiliates {
+    padding: 30px;
+    display: flex;
+    border-sizing: border;
+}
+
+.top-affiliates img {
+    object-fit: cover;
+    width: 456px;
+    height: 224px;
+    border: 1px solid #222222;
+    box-sizing: border-box;
+    margin-right: 24px;
+}
+
+.static-affiliates {
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.static-affiliates a {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #222222;
+    gap: 8px;
+}
+.chatbox {
+    width: 456px;
+    height: 258px;
+    padding: 30px;
+    align-items: center;
+    border-sizing: border;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.cb-rules {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Hind';
+    gap: 8px;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--textcolor);
+    align-content: center;
+}
+.cb-rules div {
+    flex: 1 1 80px;
+    margin: 4px;
+    flex-basis: auto;
+    height: 60px;
+    
+}
+.cb-rules b {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--accent);
+}
+.cb-rules #cb-nbr {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    height: fit-content;
+    margin-top: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--subcent);
+}
+
+
+
+.pa-rp-event {
+    align-items: center;
+    justify-content: center;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: .46 1 auto;
+    -ms-flex: .46 1 auto;
+    flex: .46 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 120px;
+    box-sizing: content-box;
+    align-items: inherit;
+    position: relative;
+    margin: auto;
+}
+
+.pa-rp-event{
+    text-align: center;
+}
+
+.pa-img-event {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: .80 1 auto;
+    -ms-flex: .80 1 auto;
+    flex: .80 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    background: url('https://i.ibb.co/94bFsGy/kaguya.png');
+    background-size: cover;
+    height: 100%;
+}
+
+.pa-rp-event-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    align-content: start;
+}
+.pa-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 auto;
+    margin: 8px;
+    padding: 8px;
+    color: var(--dark3);
+}
+.pa-icon::before {
+    content: " ";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid rgba(55, 55, 55, 0.32);
+}
+
+.rp-events {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rp-events>* {
+    flex: 1 1 80px;
+    margin: 4px;
+    flex-basis: auto;
+    height: 60px;
+    background: var(--dark1);
+    width: 118px;
+    border: 2px solid #222222;
+}
+.rpevents-feat {
+    position: relative;
+    width: auto;
+    height: 40px;
+    font-size: 12px;
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    opacity: 1;
+    -moz-opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.rpevents-feat:hover {
+    width: auto;
+    height: 40px;
+    opacity: 0.75;
+}
+
+.rpevents-feat h1 {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--textcolor);
+}
+.text-intro-before {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: var(--textcolor);
+}
+
+.text-intro-logo {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    width: 50%;
+    text-align: center;
+    line-height: 37px;
+    color: var(--accent);
+}
+.text-intro-baseline {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 19px;
+text-transform: uppercase;
+
+color: color: var(--accent);
+}
+.text-intro-lore {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: justify;
+color: var(--textcolor);
+}
+.pa-intro div{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    margin: 10px 0px 10px 20px;
+    padding: 0px 30px 0px 0px;
+    overflow-y: scroll;
+}
+.pa-rumors-container{
+    width:auto;
+    background-color: var(--dark1);
+    height: 76px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.pa-rumors {
+    align-items: center;
+    -ms-flex-order: 0;
+    -webkit-flex: .60 1 auto;
+    -ms-flex: .60 1 auto;
+    display: flex;
+    position: relative;
+    margin: 0px;
+    height: 76px;
+}
+.pa-discord {
+    align-items: center;
+    justify-content: center;
+    -webkit-order: 0;
+    text-align: right;
+    width: 42%;
+    gap: 8px;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: .40 1 auto;
+    -ms-flex: .40 1 auto;
+    flex: .40 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: center;
+    padding: 16px;
+    display: flex;
+}
+.pa-discord a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.pa-rumors-text{
+    border-right: 1px solid #202020;
+}
+.rumor {
+    padding: 16px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--textcolor);
+}
+.discord-img {
+    position: relative;
+    width: 50px;
+    height: 32px;
+}
+.staff-img {
+    width: 246px;
+    height: 146px;
+    background-size: cover;
+    border: 2px solid #171717;
+}
+.pa-footer {
+    -ms-flex-order: 0;
+    -ms-flex: .42 1;
+    -ms-flex-item-align: auto;
+    background: var(--dark4);
+    height: 300px;
+    border-radius: 0px 0px 16px 16px;
+}
+.news-texts {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 16 16 16px;
+}
+.news-texts>* {
+    height: 76px;
+    align-items: center;
+    font-family: 'Hind';
+    font-style: normal;
+    width: 400px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    color: var(--textcolor);
+    text-align: justify;
+}
+.news-section {
+    height: 190px;
+    overflow-x: auto;
+}
+.news-texts>p {
+    margin: 0px 16px 16px 16px;
+}
+#news-title {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--accent);
+}
+
+#news-title + span {
+font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 26px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: var(--dark3);
+}
+.pa-news-title {
+    align-items: center;
+    display: flex;
+}
+.pa-features {
+    row-gap: 8;
+    height: 54px;
+    border-bottom: 1px solid #171717;
+    width: 40%;
+    align-items: right;
+}
+.features-section {
+    color: var(--subcent);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin: 16px;
+}
+.pa-credits {
+    margin: 16px;
+    display: inline-table;
+}
+
+.shuriken-img {
+    background: url(https://i.ibb.co/tqVq3zs/shuriken.png) no-repeat;
+    width: 233px;
+    position: absolute;
+    margin: 40px 0px 0px 220px;
+    height: 232px;
+}
+.pa-topsites {
+    display: flex;
+    height: 54px;
+    border-top: 1px solid #171717;
+    position: absolute;
+}

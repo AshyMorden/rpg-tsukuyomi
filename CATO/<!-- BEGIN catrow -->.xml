@@ -1,0 +1,58 @@
+  <!-- BEGIN catrow -->
+  <!-- BEGIN tablehead -->
+  <div class="cat_title_cat">{catrow.tablehead.L_FORUM}</div>
+  <!-- END tablehead -->
+
+  <!-- BEGIN forumrow -->
+
+  <div class="hg_categories ash-category" data-id="{catrow.forumrow.FORUM_NAME}">
+
+    <div class="hg_cat_icon" style="background:url({catrow.forumrow.FORUM_FOLDER_IMG}) no-repeat scroll 100%;"></div>
+
+    <div class="hg_cat_blokinfo">
+      <div class="hg_forum_link"><a href="{catrow.forumrow.U_VIEWFORUM}">{catrow.forumrow.FORUM_NAME}</a></div>
+      <div class="hg_cat_desc">{catrow.forumrow.FORUM_DESC}</div>
+    </div>
+
+    <div class="hg_cat_stats">
+      <div class="hg_cat_statinter"><span>{catrow.forumrow.POSTS}</span><br /> {L_POSTS}</div>
+      <div class="hg_cat_statinter"><span>{catrow.forumrow.TOPICS}</span><br /> {L_TOPICS}</div>
+    </div>
+
+    <!-- BEGIN avatar -->
+    <div class="hg_cat_avatar">{catrow.forumrow.avatar.LAST_POST_AVATAR}</div>
+    <!-- END avatar -->
+
+    <div class="hg_lastpost">
+      {catrow.forumrow.USER_LAST_POST}<br />
+      <!-- BEGIN switch_topic_title -->
+      <a href="{catrow.forumrow.U_LATEST_TOPIC}"
+        title="{catrow.forumrow.LATEST_TOPIC_TITLE}">{catrow.forumrow.LATEST_TOPIC_NAME}</a>
+      <!-- END switch_topic_title -->
+    </div>
+
+  </div>
+
+  <div id="hg_sousfo">
+    {catrow.forumrow.L_LINKS}{catrow.forumrow.LINKS}
+    <strong>{forumrow.L_SUBFORUM_STR}</strong> {forumrow.SUBFORUMS}
+  </div>
+
+  <!-- END forumrow -->
+
+  <!-- BEGIN tablefoot -->
+  <!-- END tablefoot -->
+
+  <!-- END catrow -->
+
+<!-- BEGIN switch_on_index -->
+<!-- END switch_on_index -->
+
+<div class="hg_cat_link">
+  <!-- BEGIN switch_user_logged_in -->
+  <a href="{U_MARK_READ}" accesskey="m">{L_MARK_FORUMS_READ}</a>
+  <!-- END switch_user_logged_in -->
+  <a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a>
+  <a href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a>
+  <a href="{U_TODAY_ACTIVE}">{L_TODAY_ACTIVE}</a>
+</div>
