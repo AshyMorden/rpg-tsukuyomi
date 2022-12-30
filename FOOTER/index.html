@@ -44,16 +44,15 @@
             </div>
             <div class="bstats-online-now">
             <a href="#" id="online">{LOGGED_IN_USER_LIST}</a>
-            <script type="text/javascript">document.getElementById('online').innerHTML=document.getElementById('online').innerHTML.replace(/Utilisateurs enregistrés :/g," ");</script>
-            <script type="text/javascript">document.getElementById('online').innerHTML=document.getElementById('online').innerHTML.replace(/Moteurs de recherche :/g," ");</script>
-        </div>
+            <!-- Utilisateurs enregistrés : -->
+            </div>
         <div class="bstats-online-nstats" id="totalonline">
             {TOTAL_USERS_ONLINE}
-            <script type="text/javascript">document.getElementById('totalonline').innerHTML=document.getElementById('online').innerHTML.replace(/Utilisateurs enregistrés :/g," ");</script>
-            <script type="text/javascript">document.getElementById('totalonline').innerHTML=document.getElementById('online').innerHTML.replace(/Moteurs de recherche :/g," ");</script>
-        </div>
+            <!-- Il y a en tout 1 utilisateur en ligne :: 1 Enregistré, 0 Invisible et 0 Invité -->
+            </div>
         <div class="bstats-online-24">
             <a href="#" id="connectedmembers">{L_CONNECTED_MEMBERS}</a>
+            <!-- MEMBRES CONNECTÉS AU COURS DES 24 DERNIÈRES HEURES : -->
             </div>
         </div>
     </div>
