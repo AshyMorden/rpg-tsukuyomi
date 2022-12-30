@@ -26,7 +26,8 @@
             </div>
             <div class="bstats-newest-reg">
                 dernier shinobi arrivé
-                <b><a href="#">BALISE FA</a></b>
+                <b><a href="#" id="newestuser">{NEWEST_USER}</a></b>
+                <script type="text/javascript">document.getElementById('newestuser').innerHTML=document.getElementById('newestuser').innerHTML.replace(/L'utilisateur enregistré le plus récent est/g," ");</script>
             </div>
         </div>
 
@@ -42,15 +43,17 @@
             <b>par ici</b>
             </div>
             <div class="bstats-online-now">
-            <a href="#">BALISE FA</a>
+            <a href="#" id="online">{LOGGED_IN_USER_LIST}</a>
+            <script type="text/javascript">document.getElementById('online').innerHTML=document.getElementById('online').innerHTML.replace(/Utilisateurs enregistrés :/g," ");</script>
+            <script type="text/javascript">document.getElementById('online').innerHTML=document.getElementById('online').innerHTML.replace(/Moteurs de recherche :/g," ");</script>
         </div>
-        <div class="bstats-online-nstats">
-            <span><b>3</b> yōkai</span>
-            <span><b>5</b> shinobi</span>
-            <span><b>8</b> présents</span>
+        <div class="bstats-online-nstats" id="totalonline">
+            {TOTAL_USERS_ONLINE}
+            <script type="text/javascript">document.getElementById('totalonline').innerHTML=document.getElementById('online').innerHTML.replace(/Utilisateurs enregistrés :/g," ");</script>
+            <script type="text/javascript">document.getElementById('totalonline').innerHTML=document.getElementById('online').innerHTML.replace(/Moteurs de recherche :/g," ");</script>
         </div>
         <div class="bstats-online-24">
-            <a href="#">BALISE FA</a>
+            <a href="#" id="connectedmembers">{L_CONNECTED_MEMBERS}</a>
             </div>
         </div>
     </div>
@@ -71,61 +74,61 @@
 
         <div class="affiliates">
             <div class="top-affiliates">
-                <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/1rNT9JM/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
+                <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/1rNT9JM/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
             </div>
             <div class="static-affiliates">
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
 
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
 
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
 
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
 
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
-            <a href="https://narutotsukuyomi.forumsrpg.com//" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
             </div>
         </div>
     </div>
