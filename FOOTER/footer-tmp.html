@@ -1,0 +1,199 @@
+{JAVASCRIPT}
+
+<!-- BEGIN switch_user_login_form_header -->
+<div class="panel">
+ <form action="{S_LOGIN_ACTION}" method="post" name="form_login">
+ <div class="user_login_form center">
+ <input placeholder="{L_USERNAME}" class="inputbox fl_username" type="text" size="10" name="username" />
+ <input placeholder="{L_PASSWORD}" class="inputbox fl_password" type="password" size="10" name="password" />
+ <br />
+ <label>{L_AUTO_LOGIN}: <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label>
+ {S_HIDDEN_FIELDS}<input class="mainoption button1" type="submit" name="login" value="{L_LOGIN}" />
+            <!-- BEGIN switch_social_login -->
+            <div class="social_btn">
+                <!-- BEGIN fb_connect -->
+                <div class="fb-login-button"></div>
+                <!-- END fb_connect -->
+                <!-- BEGIN topicit_connect -->
+                <div class="ti-connect"></div>
+                <!-- END topicit_connect -->
+            </div>
+            <!-- END switch_social_login -->
+ </div>
+ </form>
+</div>
+<!-- END switch_user_login_form_header -->
+
+<!-- BEGIN message_admin_index -->
+ <div class="panel introduction">
+ <!-- BEGIN message_admin_titre -->
+ <div class="h3">{message_admin_index.message_admin_titre.MES_TITRE}</div>
+ <!-- END message_admin_titre -->
+
+ <!-- BEGIN message_admin_txt -->
+ <div class="mes-txt">{message_admin_index.message_admin_txt.MES_TXT}</div>
+ <!-- END message_admin_txt -->
+ </div>
+<!-- END message_admin_index -->
+
+{CHATBOX_TOP}
+
+{BOARD_INDEX}
+
+<!-- BEGIN disable_viewonline -->
+
+<div class="footer">
+
+        <div class="bstats-main">
+        <div class="bstats-1">
+            <div class="bstats-title">
+                <b>board stats</b>
+            </div>
+            <div class="bstats-links">
+                <a href="https://narutotsukuyomi.forumsrpg.com/search?search_id=newposts" class="bs-last-click">Dernier topics</a>
+                <a href="https://narutotsukuyomi.forumsrpg.com/memberlist" class="bs-mem-list">Liste des shinobi</a>
+                <a href="https://narutotsukuyomi.forumsrpg.com/search?search_id=activetopics" class="bs-active-topics">Topics actifs</a>
+                <a href="https://narutotsukuyomi.forumsrpg.com/statistics#8" class="bs-top-10">Top 10 shinobi</a>
+                <a href="#" class="bs-mod-team">Tsukuyomi team</a>
+            </div>
+            <div class="bstats-newest-reg">
+                dernier shinobi arrivé
+                <b><a href="#" id="newestuser">{NEWEST_USER}</a></b>
+                <script type="text/javascript">document.getElementById('newestuser').innerHTML=document.getElementById('newestuser').innerHTML.replace(/L'utilisateur enregistré le plus récent est/g," ");</script>
+            </div>
+        </div>
+
+        <div class="bstats-grp">
+            <a href="#"><span class="akatsuki">akatsuki</span></a>
+            <a href="#"><span class="ototsuki">ototsuki</span></a>
+            <a href="#"><span class="nukenin">nukenin</span></a>
+            <a href="#"><span class="shinobi">shinobi</span></a>
+        </div>
+
+        <div class="bstats-2">
+            <div class="bstats-title">
+            <b>par ici</b>
+            </div>
+            <div class="bstats-online-now">
+            <a href="#" id="online">{LOGGED_IN_USER_LIST}</a>
+            <!-- Utilisateurs enregistrés : -->
+            </div>
+        <div class="bstats-online-nstats" id="totalonline">
+            {TOTAL_USERS_ONLINE}
+            <!-- Il y a en tout 1 utilisateur en ligne :: 1 Enregistré, 0 Invisible et 0 Invité -->
+            </div>
+        <div class="bstats-online-24">
+            <a href="#" id="connectedmembers">{L_CONNECTED_MEMBERS}</a>
+            <!-- MEMBRES CONNECTÉS AU COURS DES 24 DERNIÈRES HEURES : -->
+            </div>
+        </div>
+    </div>
+        <div class="footer-end">
+            <div class="footer-container">
+                
+                <div class="chatbox">
+                    <div class="cb-rules"><div id="cb-nbr">01.</div><div>Soyons <b>respectueux</b> envers les autres membres, le personnel et les invités.</div></div>
+                    <div class="cb-rules"><div id="cb-nbr">02.</div> <div>cbox sont pour les <b>échanges hrpg</b>, on ne poste pas sous le visage de son personnage, ni ne nous faisons passer pour un autre membre.</div></div>
+                    <div class="cb-rules"><div id="cb-nbr">03.</div> <div>Veillons à ce que la cbox soit un lieu <b>harmonieux et convivial</b> pour tous et traitons nos problèmes en message privé.</div></div>
+                    <div class="cb-rules"><div id="cb-nbr">04.</div> <div>Pas de promotions d’autres sites sur la cbox; notre section partenaire est faites pour ça !</div></div>
+                    </div>
+                </div>
+
+                <iframe src="https://www5.cbox.ws/box/?boxid=940003&boxtag=LVgjMe" width="620px" height="320px" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+            
+            </div>
+
+        <div class="affiliates">
+            <div class="top-affiliates">
+                <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/1rNT9JM/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            </div>
+            <div class="static-affiliates">
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            <a href="https://narutotsukuyomi.forumsrpg.com/" target="_blank"><img src="https://i.ibb.co/483DRfY/ICON.png" title="naruto shippuden · neo-japanese action/dramatic RP"/></a>
+            </div>
+        </div>
+    </div>
+
+<!-- END disable_viewonline -->
+
+{CHATBOX_BOTTOM}
+
+<!-- BEGIN switch_user_login_form_footer -->
+<div class="panel">
+ <form action="{S_LOGIN_ACTION}" method="post" name="form_login">
+ <div class="user_login_form center">
+ <input placeholder="{L_USERNAME}" class="inputbox fl_username" type="text" size="10" name="username" />
+ <input placeholder="{L_PASSWORD}" class="inputbox fl_password" type="password" size="10" name="password" />
+ <br />
+ <label>{L_AUTO_LOGIN}: <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label>
+ {S_HIDDEN_FIELDS}<input class="mainoption button1" type="submit" name="login" value="{L_LOGIN}" />
+ <!-- BEGIN switch_social_login -->
+            <div class="social_btn">
+                <!-- BEGIN fb_connect -->
+                <div class="fb-login-button"></div>
+                <!-- END fb_connect -->
+                <!-- BEGIN topicit_connect -->
+                <div class="ti-connect"></div>
+                <!-- END topicit_connect -->
+            </div>
+            <!-- END switch_social_login -->
+ </div>
+ </form>
+</div>
+<!-- END switch_user_login_form_footer -->
+
+<!-- BEGIN switch_legend -->
+
+<!-- END switch_legend -->
+
+{AUTO_DST}
