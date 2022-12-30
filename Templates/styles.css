@@ -2,22 +2,22 @@
 /* ROOT */
 :root {
 	--bgcolor: #232323;
-  --dark1: #171717;
-  --dark2: #272727;
-  --dark3: #373737;
-  --dark4: #202020;
-  --accent: #a24e35;
-  --subcent: #513a29;
-  --tricent: #9e6148;
-  --spungold: #76563e;
-  --textcolor: #8a8a8a;
-	
-	--cagliostro: #675554;
-	--farnessa: #695e67;
-	--atmahata: #4c5047;
-	--tarpuz: #444c52;
-	--unaligned: #3a3935;
+    --dark1: #171717;
+    --dark2: #272727;
+    --dark3: #373737;
+    --dark4: #202020;
+    --accent: #a24e35;
+    --subcent: #513a29;
+    --tricent: #9e6148;
+    --spungold: #76563e;
+    --textcolor: #8a8a8a; 
+
+    --akatsuki: #D45C4C;
+    --ototsuki: #B5CBDE;
+    --nukenin: #907AAB;
+    --shinobi: #BD845C;
 }
+
 #page-header {
   z-index: 99 !important;
 }
@@ -112,7 +112,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding: 20px 10px;
-  z-index:1000;
+  z-index: 999;
 }
 .js-avatar {
   overflow: hidden;
@@ -254,10 +254,10 @@ font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f520";font-size
 }
 
 /*Header*/
-#ae-header {
+#it-header {
   width: 100%;
   height: 100vh;
-  top: 0;
+  top: 40px;
   left: 0;
   position: fixed;
   display: flex;
@@ -275,155 +275,65 @@ font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f520";font-size
   transition: all ease 1.5s;
 }
 
-.aeh-trig1 { 
-  position: absolute;
-  top: 20px;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  width: 750px;
-  height: 650px;
-  background: #f1f1f1;
+.it-header-img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.ibb.co/5rp7DX4/BAN-madara.png');
+    background-size: 48%;
+    background-repeat: no-repeat;
+    mix-blend-mode: ;
+    z-index: 1;
+    background-position: center;
+  margin-bottom: -20px;
 }
 
-.aeh-trig2 { 
-  position: absolute;
-  top: calc(50% - 270px);
-  left: calc(50% - 400px);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  width: 330px;
-  height: 280px;
-  background-image: url(https://i.ibb.co/5THTtVW/dots2.png);
+.it-header-title {
+    width: 550px;
+    letter-spacing: -5px;
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 360px;
+    font-size: 96px;
+    line-height: 70px;
+    text-align: center;
+    color: #C1BDAC;
+    z-index: 2;
 }
-
-.aeh-trig3 { 
-  position: absolute;
-  top: calc(50% - 120px);
-  right: calc(50% - 400px);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  width: 200px;
-  height: 180px;
-  background-image: url(https://i.ibb.co/5THTtVW/dots2.png);
-  z-index: 3;
+h1 {
+    position: relative;
+    z-index: 2;
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 106px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(55 55 55 / 24%);
+    margin-top: -90px;
+    color: #C1BDAC;
 }
-
-.ae-header-img {
-  position: absolute;
-  top: 15px;
-  width: 664px;
-  height: 794px;
-  background-image: url(https://i.ibb.co/Vv45HYQ/ae-banner-2.png);
-  mix-blend-mode: ;
-  z-index: 2;
+h2 {
+    font-family: 'Hind';
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 12px;
+    text-transform: uppercase;
+    ser-select: none;
+    position: relative;
+    z-index: 2;
+    color: #C1BDAC;
+    text-shadow: 0px 4px 4px rgb(55 55 55 / 24%);
 }
-
-.ae-header-title {
-  color: var(--second);
-  font-size: 200px;
-  font-weight: 900;
-  line-height: 80%;
-  letter-spacing: -5px;
-}
-
-.ae-htitle-1 {
-  position: relative;
-  z-index: 1;
-}
-
-.ae-htitle-1-5 {
-  position: absolute;
-  z-index: 3;
-  top: calc(50% - 172px);
-  mix-blend-mode: hard-light;
-  color: #896800;
-}
-
-.ae-htitle-2 { 
-  color: var(--main);
-  font-size: 230px;
-  line-height: 80%;
-  display: inline-block;
-  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
-  position: relative;
-  left: -5px;
-  z-index: 3;
-  mix-blend-mode: color-burn;
-}
-
-.ae-htitle-3 {
-  border-left: 20px solid #333;
-  display: inline-block;
-  height: 185px;
-  transform: skewX(-28deg);
-  position: relative;
-  left: -95px;
-  bottom: -20px;
-  margin-top: -30px;
-  z-index: 3;
-}
-
-.ae-stitle {
-  color: var(--second);
-  font-size: 12px;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  font-weight: 800;
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  background-color: #ffffff50;
-  background-image: url(https://i.ibb.co/VJV2XY2/sdots.png);
-  line-height: 12px;
-  top: calc(50% + 25px);
-  left: calc(50% + 150px);
-  padding: 20px;
-  box-shadow: 0px 0px 15px #00000010;
-  overflow: hidden;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.ae-stitle::after {
-  content: "\f7d4";
-  font-family: "Font Awesome 5 Pro";
-  font-size: 68px;
-  font-weight: 300;
-  position: absolute;
-  color: #ffbf00;
-  top: 1px;
-  right: -8px;
-  opacity: 1; -moz-opacity: 1;
-  line-height: 70px;
-}
-
-.ae-hquote {
-  font-weight: 700;
-  font-style: italic;
-  font-size: 14px;
-  letter-spacing: 0px;
-  position: absolute;
-  line-height: 20px;
-  left: calc(50% - 400px);
-  text-align: right;
-  border-top: 3px solid var(--main);
-  padding: 20px 0px;
-  margin-top: 20px;
-  z-index: 3;
-  text-shadow: 2px 1px 0px white;
-}
-
-.ae-hud1 {
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  background-image: url(https://i.pinimg.com/originals/8a/3b/cb/8a3bcb7e671068f7841726ee04928601.gif);
-  position: absolute;
-  mix-blend-mode: screen;
-  background-size: cover;
-  background-position: center;
-  top: calc(50% - 190px);
-  left: calc(50% - 190px);
-  z-index: 2;
+.it-title-img {
+    width: 40px;
+    margin: auto;
+    height: 40px;
+    background-image: url(https://i.ibb.co/n8vvHBC/BAN-shuriken.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 /**CATO JS + FLEX**/
@@ -434,43 +344,167 @@ font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f520";font-size
     grid-auto-flow: row;
     gap: 10px;
 }
+div[data-id="Godaikoku"] .hg_cat_desc,
+div[data-id="Sato"] .hg_cat_desc,
+div[data-id="Yugakure"] .hg_cat_desc,
+div[data-id="Jima"] .hg_cat_desc,
+div[data-id="Jikukan"] .hg_cat_desc,
+div[data-id="Tengai"] .hg_cat_desc {
+    padding: 0px 40px 10px 0px;
+    overflow: auto;
+    width: 220px;
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    font: 10px roboto;
+    font-weight: 300;
+    line-height: 14px;
+}
+div[data-id="Parchemin du shinobi"] .hg_cat_stats,
+div[data-id="Annonces"] .hg_cat_stats,
+div[data-id="Services"] .hg_cat_stats,
+div[data-id="Archives"] .hg_cat_stats {
+  //Hide stats;
+  display: none;
+}
 
+div[data-id="Parchemin du shinobi"] .hg_cat_desc,
+div[data-id="Annonces"] .hg_cat_desc,
+div[data-id="Services"] .hg_cat_desc,
+div[data-id="Archives"] .hg_cat_desc {
+  //Remove overflow that hide the text content;
+  overflow: inherit;
+}
+
+div[data-id="Parchemin du shinobi"] .hg_forum_link a,
+div[data-id="Annonces"] .hg_forum_link a,
+div[data-id="Services"] .hg_forum_link a,
+div[data-id="Archives"] .hg_forum_link a,
+div[data-id="Personnage"] .hg_forum_link a,
+div[data-id="Carnet du shinobi"] .hg_forum_link a,
+div[data-id="Godaikoku"] .hg_forum_link a,
+div[data-id="Sato"] .hg_forum_link a,
+div[data-id="Yugakure"] .hg_forum_link a,
+div[data-id="Jima"] .hg_forum_link a,
+div[data-id="Jikukan"] .hg_forum_link a,
+div[data-id="Tengai"] .hg_forum_link a,
+div[data-id="Discussions"] .hg_forum_link a, div[data-id="Partenariat"] .hg_forum_link a {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #513A29;
+}
+
+div[data-id="Parchemin du shinobi"] .hg_forum_link a {
+  font-size: 72px;
+  line-height: 83px;
+}
+
+div[data-id="Annonces"] .hg_cat_icon,
+div[data-id="Services"] .hg_cat_icon,
+div[data-id="Archives"] .hg_cat_icon {
+  //Icon is hidden, but still as a width that screw the display;
+  //width: 0;
+  display: none!important;
+}
+
+div[data-id="Annonces"] .hg_cat_blokinfo,
+div[data-id="Services"] .hg_cat_blokinfo,
+div[data-id="Archives"] .hg_cat_blokinfo {
+  padding-left: 0; //32px;
+}
+
+div[data-id="Annonces"],
+div[data-id="Services"],
+div[data-id="Archives"] {
+  border: 1px solid #171717;
+  border-radius: 16px;
+}
+
+.annonces-content, .services-content, .archives-content {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: justify;
+  letter-spacing: -0.02em;
+}
+  
 div[data-id="Parchemin du shinobi"] {
-  background-color: purple;
-      grid-column: 1/2;
-    grid-row: 1/4;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr;
-    width: 100%;
-    padding: 58% 10% 0 10%;
-    height: 590px;
+  background: url(https://i.ibb.co/qjZnFcm/IMG-handbook.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+  width: 100%;
+  height: 590px;
+  padding: 0 0 0 40px;
+}
+
+.parchemin-du-shinobi-content {
+  width: 365px;
+    font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.parchemin-du-shinobi-links {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #A24E35;
 }
 
 div[data-id="Annonces"] {
-  background-color: green;
-      height: auto;
-    grid-template-columns: 360px 1fr;
-    grid-template-rows: 30px 80px 1fr;
-    padding: 30px 0 0px 20px;
+  //background-color: green;
 }
 
 div[data-id="Services"] {
-  background-color: blue;
+  //background-color: blue;
 }
 
 /* CATEGORY */
 .cat_title_cat {
-  text-align: center;
-  margin: 20px auto 40px auto;
-  width: 400px;
+    text-align: center;
+    display: flex;
+    align-content: unset;
+    margin: 20px auto 40px auto;
+    height: 85px;
+    border-radius: 16px;
+    background: var(--dark1);
 }
+
 .cat_title_cat h2 {
-  color: #ddd;
-  padding: 5px 30px;
-  font: 9px roboto;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    display: flex;
+    font-weight: 400;
+    font-size: 32px;
+    align-content: center;
+    line-height: 37px;
+    font-size: 32px;
+    margin: 20px 0 20px 20px;
+    color: var(--accent);
+    align-items: center;
 }
 .hg_categories {
   background: #1a1a1a;
@@ -480,10 +514,7 @@ div[data-id="Services"] {
   justify-content: space-evenly;
 }
 .hg_cat_icon {
-  background-size: 100%;
-  height: 80px;
-  width: 10px;
-  margin: 0px -5px 0px -10px;
+display:none;
 }
 .hg_cat_blokinfo {
   width: 430px;
@@ -590,88 +621,336 @@ transform: translate3d(0,0,0);
 }
 
 /* FOOTER */
+.akatsuki {
+    color: var(--akatsuki);
+}
+.ototsuki {
+    color: var(--ototsuki);
+}
+.nukenin {
+    color: var(--nukenin);
+}
+.shinobi {
+    color: var(--shinobi);
+}
 
-.basfooter {
-    background: url(https://imgur.com/Uc1zrBS.gif) no-repeat #000;
-    height: 500px;
-    background-position: 50% 50%;
-    top: 0px;
-    left: -8px;
-    right: 0;
-    border-top: solid 20px #a495da;
-    width: calc(100% + 16px);
-    position: relative;
-    z-index: 9;
-}
-  .entourfoot {
-    width:1500px;
-    margin:0 auto;
-  }
-  .blokychou {
-    width:720px;
-    padding:10px;
-    display:inline-block;
-    vertical-align:top;
-    margin:4px;
-  }
-  .bffimg {
-    text-align:center;
-    filter: grayscale(70%);
-    transition: linear 1s;
-  }
-  .bffimg:hover {
-    filter: grayscale(0%);
-    transition: linear 1s;
-  }
-  .bffimg img {
-    margin:5px;
-    width:50px;
-    height:50px;
-    border: solid 1px #392a75;
-    outline: 1px solid #fff;
-    outline-offset: -2px;
-  }
-  .title {
-    height:50px;
-  }
-  .tourte {
-    padding:5px;
-    width:500px;
-    margin:20px auto;
-    color:#eaeaea;
-    font:12px roboto;
-  }
-  .tourte a {
-    color:lightgrey;
-    font-size:13px;
-    transition: linear 1s;
-  }
-  .tourte a:hover {
-    color:#a495da;
-  }
-#footer2 {
-    background: #1c1c1c;
-    font: 7px 'open sans';
+.text-accent {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+	color: var(--accent);
+}
+.text-jp {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--dark3);
+}
+.text-subcent {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--textcolor);
+}
+.footer {
+    width: 1200px;
+    height: auto;
+    background-image: url('https://i.ibb.co/CvCf2gK/footer.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 50px 52px 90px 52px;
+}
+.footer-end {
+    margin: 64px 0px 24px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    height: auto;
+}
+.container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    background: var(--dark4);
+    height: 100%;
+    border-radius: 0px 16px 0px 0px;
+}
+
+.bstats-grp {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    text-align: center;
+    width: 24%;
+    line-height: 44px;
+    color: var(--accent);
+    text-align: center;
+}
+
+.bstats-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 86px;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 246px 0px 0px 48px;
+    align-content: center;
+}
+.bstats-title {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 4px;
+    width: fit-content;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: #1C1C1C;
+    border: 2px solid #232323;
+    border-radius: 2px;
+}
+.bstats-1 {
+	box-sizing: border-box;
+	width: 200px;
+	position: relative;
+}
+
+.bstats-links {
+	margin: 30px 0px 20px 0px;
+	line-height: 200%;
+}
+
+.bstats-links a {
+	display: block;
+    font-family: 'Hind';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 26px;
+
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: var(--accent);
+}
+
+.bstats-links a::before {
+    font-family: 'Font Awesome 6 Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 8px;
+    text-transform: uppercase;
+    color: var(--subcent);
+}
+
+.bs-last-click::before { content: "\f06e"; }
+.bs-mem-list::before { content: "\f504"; }
+.bs-active-topics::before { content: "\f71f"; }
+.bs-top-10::before { content: "\f005"; }
+.bs-mod-team::before { content: "\f520"; }
+
+.bstats-newest-reg {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    padding: 8px;
+    letter-spacing: 0.08em;
+    background: #1C1C1C;
+    border: 2px solid #232323;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.bstats-newest-reg b {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    
+    text-align: justify;
+    text-transform: uppercase;
+    
+    color: #907AAB;
+}
+
+.bstats-2 {
+	width: 380px;
+	position: relative;
+	margin: 0px 40px;
+}
+
+.bstats-online-now {
+	margin: 30px 0px;
+	font-size: 21px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 120%;
+	text-transform: lowercase;
+	text-shadow: 0px 0px 10px #584d44a6;
+}
+
+.bstats-online-nstats {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
     letter-spacing: 1px;
-    width: calc(100% + 16px);
-    position: relative;
-    left: -8px;
-    overflow: hidden;
-    margin-top: -30px;
-    color: #ccc;
+    padding: 8px 0px;
+    border-top: border: 1px solid #777777;
+    border-top: 1px solid var(--bgcolor);
+    border-bottom: 1px solid var(--bgcolor);
 }
-.footer2b {
-    float: left;
+
+.bstats-online-nstats span {
+	margin-right: 10px;
+}
+
+.bstats-online-24 {
+	font-size: 10px;
+	font-family: Poppins;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 20px 0px;
+	text-align: justify;
+	line-height: 150%;
+	text-shadow: 0px 0px 5px #584d44a6;
+}
+
+.bs3-box {
+	color: var(--shell);
+	width: 70px;
+	height: 70px;
+	border: 1px solid #988c83;
+	background: #5d544b7a;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 8px;
+	font-family: Poppins;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.affiliates {
     padding: 30px;
+    display: flex;
+    border-sizing: border;
 }
-.footer2c {
-    float: right;
-    width: 50%;
-    padding: 10px;
-    height: 100px;
+
+.top-affiliates img {
+    object-fit: cover;
+    width: 456px;
+    height: 224px;
+    border: 1px solid #222222;
+    box-sizing: border-box;
+    margin-right: 24px;
 }
-#page-footer a{
-  position:relative;
-  z-index:9;
+
+.static-affiliates {
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.static-affiliates a {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #222222;
+    gap: 8px;
+}
+.chatbox {
+    width: 456px;
+    height: 258px;
+    padding: 30px;
+    align-items: center;
+    border-sizing: border;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.cb-rules {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Hind';
+    gap: 8px;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--textcolor);
+    align-content: center;
+}
+.cb-rules div {
+    flex: 1 1 80px;
+    margin: 4px;
+    flex-basis: auto;
+    height: 60px;
+    
+}
+.cb-rules b {
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+	color: var(--accent);
+}
+.cb-rules #cb-nbr {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    height: fit-content;
+    margin-top: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--subcent);
 }
