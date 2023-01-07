@@ -41,7 +41,7 @@ html > ::-webkit-scrollbar {
     --nukenin: #907AAB;
     --shinobi: #BD845C;
 }
-p, tbody {
+p + tbody {
   font-family: 'Hind';
 }
 #page-header {
