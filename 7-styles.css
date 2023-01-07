@@ -1,7 +1,3 @@
-
-
-
-
 /* MEMBER LIST */
 .lastvisit {
 	position: absolute;
@@ -145,28 +141,4 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-/*CATO*/
-div[data-id="Godaikoku"] .hg_cat_desc>img,
-div[data-id="Sato"] .hg_cat_desc>img,
-div[data-id="Yugakure"] .hg_cat_desc>img,
-div[data-id="Jima"] .hg_cat_desc>img,
-div[data-id="Jikukan"] .hg_cat_desc>img,
-div[data-id="Tengai"] .hg_cat_desc>img {
-	width: 816px;
-	height: 300px;
-	-o-object-fit: cover;
-	object-fit: cover;
-	position: absolute;
-	top: 0;
-	left: 282px;
-	border-radius: 0;
-	mix-blend-mode: overlay;
-	-webkit-filter: grayscale(1) contrast(0.2);
-}
-
-.RP-desc {
-	width: 236px;
-    margin-top: 16px;
 }
