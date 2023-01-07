@@ -255,11 +255,23 @@ font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f52a"; font-siz
 font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f520";font-size: 16px;
 }
 
+/* CSS BAN ANIMATION */
+@keyframes animName {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+
+}
+
 /*Header*/
 #it-header {
   width: 100%;
   height: 100vh;
-  top: 40px;
+  top: 20px;
   left: 0;
   position: fixed;
   display: flex;
@@ -668,6 +680,913 @@ width:100%;
 .topic_aut p{
 font: 8px roboto !important;
 color:#cbcbcb;
+}
+
+/** CATO HEADLINE **/
+.hg_lastpost .color-groups strong::before {
+	content: "Par";
+	padding-right: 4px;
+	color: var(--textcolor);
+}
+
+.cat_title_cat {
+	text-align: center;
+	display: flex;
+	align-content: unset;
+	margin: 16px auto 16px auto;
+	height: 85px;
+	border-radius: 8px;
+	background: var(--dark1);
+}
+
+.cat_title_cat h2 {
+	font-family: 'Ninja Naruto';
+	font-style: normal;
+	display: flex;
+	font-weight: 400;
+	font-size: 32px;
+	align-content: center;
+	line-height: 37px;
+	font-size: 32px;
+	margin: 20px 0 20px 20px;
+	color: var(--accent);
+	align-items: center;
+}
+
+/** CATO GLOBALE **/
+.ash-categories {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-auto-flow: row;
+	gap: 16px;
+}
+
+.hg_cat_avatar img:before {
+	position: relative;
+	margin: 20px 0;
+	width: 100px;
+	left: -40px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+.hg_categories {
+	background: #1a1a1a;
+	width: max-width;
+	height: 300px;
+	display: -ms-grid;
+	display: grid;
+	position: relative;
+	overflow: hidden;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+div[data-id="Parchemin du shinobi"] .hg_cat_stats,
+div[data-id="Annonces"] .hg_cat_stats,
+div[data-id="Services"] .hg_cat_stats,
+div[data-id="Archives"] .hg_cat_stats,
+div[data-id="Discussions"] .hg_cat_stats,
+div[data-id="Partenariat"] .hg_cat_stats {
+	//Hide stats;
+	display: none;
+}
+
+div[data-id="Parchemin du shinobi"] .hg_forum_link a,
+div[data-id="Annonces"] .hg_forum_link a,
+div[data-id="Services"] .hg_forum_link a,
+div[data-id="Archives"] .hg_forum_link a,
+div[data-id="Personnage"] .hg_forum_link a,
+div[data-id="Carnet du shinobi"] .hg_forum_link a,
+div[data-id="Godaikoku"] .hg_forum_link a,
+div[data-id="Sato"] .hg_forum_link a,
+div[data-id="Yugakure"] .hg_forum_link a,
+div[data-id="Jima"] .hg_forum_link a,
+div[data-id="Jikukan"] .hg_forum_link a,
+div[data-id="Tengai"] .hg_forum_link a,
+div[data-id="Discussions"] .hg_forum_link a,
+div[data-id="Partenariat"] .hg_forum_link a {
+	font-family: 'Ninja Naruto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	color: #513A29;
+}
+
+div[data-id="Parchemin du shinobi"] .hg_lastpost,
+div[data-id="Annonces"] .hg_lastpost,
+div[data-id="Services"] .hg_lastpost,
+div[data-id="Archives"] .hg_lastpost,
+div[data-id="Personnage"] .hg_lastpost,
+div[data-id="Carnet du shinobi"] .hg_lastpost,
+div[data-id="Godaikoku"] .hg_lastpost,
+div[data-id="Sato"] .hg_lastpost,
+div[data-id="Yugakure"] .hg_lastpost,
+div[data-id="Jima"] .hg_lastpost,
+div[data-id="Jikukan"] .hg_lastpost,
+div[data-id="Tengai"] .hg_lastpost,
+div[data-id="Discussions"] .hg_lastpost,
+div[data-id="Partenariat"] .hg_lastpost {
+	display: inline-block;
+	text-transform: uppercase;
+	display: flex;
+	position: relative;
+	left: 24px;
+	font-family: 'Hind';
+	position: absolute;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	justify-items: start;
+	position: absolute;
+	left: 80px;
+	flex-direction: column-reverse;
+	bottom: 20px;
+}
+
+.hg_cat_icon {
+	display: none;
+}
+
+.hg_forum_link a {
+	color: #d66a2f;
+	font: 12px roboto;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*.hg_cat_desc
+{
+	padding: 10px 10px 10px 0px;
+	overflow: auto;
+	height: 55px;
+	font: 10px roboto;
+	font-weight:300;
+	line-height: 11px;
+}
+
+*/
+.hg_cat_stats {
+	text-align: center;
+	width: 90px;
+	padding-top: 10px;
+}
+
+.hg_cat_statinter {
+	text-transform: uppercase;
+	font: 7px roboto;
+	letter-spacing: 1px;
+	padding: 5px 0px;
+}
+
+.hg_cat_statinter span {
+	color: #d66a2f;
+	letter-spacing: 0px;
+}
+
+.hg_cat_avatar {
+	overflow: hidden;
+	width: 40px;
+	border-width: 0;
+	outline: 6px solid #272727;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 100%;
+	height: 40px;
+}
+
+.hg_cat_avatar img {
+	width: 100%;
+}
+
+.hg_lastpost {
+	text-align: center;
+	text-transform: uppercase;
+	display: flex;
+	position: relative;
+	left: 24px;
+	font-family: 'Hind';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 16px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	line-height: 30px;
+	justify-items: start;
+	grid-column: 1/2;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.hg_lastpost a {
+	line-height: 0px;
+}
+
+.hg_lastpost img {
+	position: absolute;
+	margin: 25px 0px 0px 25px;
+}
+
+#hg_sousfo {
+	font-size: 0px;
+	transition: all 800ms;
+}
+
+#hg_sousfo a {
+	color: var(--accent);
+	font-family: 'Hind';
+	font-style: normal;
+	bottom: 64px;
+	position: absolute;
+	font-weight: 700;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: var(--dark5);
+	padding: 4px;
+	border-radius: 2px;
+	border: 2px solid var(--dark2);
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 800ms;
+	overflow: hidden;
+	position: relative;
+}
+
+#hg_sousfo a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #1a1a1a;
+	content: none;
+	border-bottom: 1px solid #d66a2f;
+	transform: translate3d(-101%, 0, 0);
+	transition: transform .3s cubic-bezier(0.11, 0.7, 0, 1);
+}
+
+#hg_sousfo a:hover:after {
+	transform: translate3d(0, 0, 0);
+}
+
+.hg_cat_link {
+	text-align: center;
+	font: 10px roboto;
+	text-transform: lowercase;
+	padding-top: 25px;
+}
+
+.hg_cat_link a {
+	margin: 0px 10px;
+	font-style: italic;
+	color: #b75711;
+}
+
+/** CATO HANDBOOK **/
+div[data-id="Parchemin du shinobi"] .hg_forum_link a {
+	font-size: 72px;
+	top: 72px;
+	position: relative;
+	line-height: 96px;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 2px;
+	color: var(--accent);
+}
+
+div[data-id="Parchemin du shinobi"] {
+	background: url(https://i.ibb.co/qjZnFcm/IMG-handbook.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-column: 1/2;
+	grid-row: 1/4;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 40px 1fr;
+	width: 100%;
+	height: 100%;
+	padding: 0 0 0 40px;
+	border-radius: 8px;
+}
+
+.parchemin-du-shinobi-content {
+	width: 425px;
+	font-family: 'Hind';
+	font-style: normal;
+	position: relative;
+	top: 124px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.parchemin-du-shinobi-links {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Hind';
+	font-style: normal;
+	position: relative;
+	font-weight: 700;
+	top: 170px;
+	margin-right: 64px;
+	font-size: 16px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #A24E35;
+}
+
+div[data-id="Parchemin du shinobi"] .hg_cat_desc {
+	//Remove overflow that hide the text content;
+	overflow: inherit;
+}
+
+/** CATO SERVICES **/
+div[data-id="Annonces"] .hg_cat_desc,
+div[data-id="Services"] .hg_cat_desc,
+div[data-id="Archives"] .hg_cat_desc {
+	padding: 8px 0px 0px 0px;
+	overflow: auto;
+	height: 52px;
+	display: flex;
+	overflow: inherit;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+div[data-id="Annonces"] .hg_cat_icon,
+div[data-id="Services"] .hg_cat_icon,
+div[data-id="Archives"] .hg_cat_icon {
+	//Icon is hidden, but still as a width that screw the display;
+	//width: 0;
+	display: none !important;
+}
+
+div[data-id="Annonces"] .hg_lastpost a,
+div[data-id="Services"] .hg_lastpost a,
+div[data-id="Archives"] .hg_lastpost a {
+	height: 20px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div[data-id="Annonces"] .hg_lastpost a:nth-of-type(2),
+div[data-id="Services"] .hg_lastpost a:nth-of-type(2),
+div[data-id="Archives"] .hg_lastpost a:nth-of-type(2) {
+	position: absolute;
+	width: max-content;
+	font-size: 14px;
+	bottom: 24px;
+}
+
+div[data-id="Annonces"] .hg_lastpost .color-groups strong,
+div[data-id="Services"] .hg_lastpost .color-groups strong,
+div[data-id="Archives"] .hg_lastpost .color-groups strong {
+	padding-right: 4px;
+}
+
+div[data-id="Annonces"] .hg_lastpost,
+div[data-id="Services"] .hg_lastpost,
+div[data-id="Archives"] .hg_lastpost {
+	display: inline-block;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: 24px;
+	font-family: 'Hind';
+	position: absolute;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	justify-items: start;
+	position: absolute;
+	left: 84px;
+	flex-direction: row-reverse;
+	bottom: 16px;
+	line-height: 8px;
+}
+
+div[data-id="Annonces"] .hg_cat_blokinfo,
+div[data-id="Services"] .hg_cat_blokinfo,
+div[data-id="Archives"] .hg_cat_blokinfo {
+	width: 100%;
+}
+
+.annonces-content,
+.services-content,
+.archives-content {
+	font-family: 'Hind';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: justify;
+	letter-spacing: -0.02em;
+}
+
+div[data-id="Annonces"],
+div[data-id="Services"],
+div[data-id="Archives"] {
+	border-radius: 8px;
+	display: flex;
+	padding: 24px;
+	margin-bottom: 0px;
+	align-items: flex-start;
+	height: 180px;
+	justify-content: flex-start;
+}
+
+div[data-id="Annonces"] .hg_cat_avatar,
+div[data-id="Services"] .hg_cat_avatar,
+div[data-id="Archives"] .hg_cat_avatar {
+	overflow: hidden;
+	width: 40px;
+	border-width: 0;
+	outline: 6px solid #272727;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	border-radius: 100%;
+	bottom: 16px;
+	height: 40px;
+}
+
+/** CATO HRPG **/
+div[data-id="Discussions"] .hg_cat_desc,
+div[data-id="Partenariat"] .hg_cat_desc {
+	padding: 8px 0px 0px 0px;
+	overflow: auto;
+	height: 52px;
+	display: flex;
+	overflow: inherit;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+div[data-id="Discussions"] .hg_cat_icon,
+div[data-id="Partenariat"] .hg_cat_icon {
+	//Icon is hidden, but still as a width that screw the display;
+	//width: 0;
+	display: none !important;
+}
+
+div[data-id="Discussions"] .hg_lastpost a,
+div[data-id="Partenariat"] .hg_lastpost a {
+	height: 20px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div[data-id="Discussions"] .hg_lastpost a:nth-of-type(2),
+div[data-id="Partenariat"] .hg_lastpost a:nth-of-type(2) {
+	position: absolute;
+	width: max-content;
+	font-size: 14px;
+	bottom: 24px;
+}
+
+div[data-id="Discussions"] .hg_lastpost .color-groups strong,
+div[data-id="Partenariat"] .hg_lastpost .color-groups strong {
+	padding-right: 4px;
+}
+
+div[data-id="Discussions"] .hg_lastpost,
+div[data-id="Partenariat"] .hg_lastpost {
+	display: inline-block;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: 24px;
+	font-family: 'Hind';
+	position: absolute;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	justify-items: start;
+	position: absolute;
+	left: 84px;
+	flex-direction: row-reverse;
+	bottom: 16px;
+	line-height: 8px;
+}
+
+div[data-id="Discussions"] .hg_cat_blokinfo,
+div[data-id="Partenariat"] .hg_cat_blokinfo {
+	width: 100%;
+}
+
+.Discussions,
+.Partenariat {
+	font-family: 'Hind';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: justify;
+	letter-spacing: -0.02em;
+}
+
+div[data-id="Discussions"],
+div[data-id="Partenariat"] {
+	border-radius: 8px;
+	display: flex;
+	padding: 24px;
+	margin-bottom: 0px;
+	align-items: flex-start;
+	height: 180px;
+	justify-content: flex-start;
+}
+
+div[data-id="Discussions"] .hg_cat_avatar,
+div[data-id="Partenariat"] .hg_cat_avatar {
+	overflow: hidden;
+	width: 40px;
+	border-width: 0;
+	outline: 6px solid #272727;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	border-radius: 100%;
+	bottom: 16px;
+	height: 40px;
+}
+
+/** CATO MEMBRE RPG **/
+div[data-id="Personnage"] .hg_cat_desc,
+div[data-id="Carnet du shinobi"] .hg_cat_desc {
+	padding: 32px 0px 0px 0px;
+	overflow: auto;
+	height: 52px;
+	display: flex;
+	overflow: inherit;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+div[data-id="Personnage"] .hg_cat_icon,
+div[data-id="Carnet du shinobi"] .hg_cat_icon {
+	//Icon is hidden, but still as a width that screw the display;
+	//width: 0;
+	display: none !important;
+}
+
+div[data-id="Personnage"] .hg_lastpost a,
+div[data-id="Carnet du shinobi"] .hg_lastpost a {
+	height: 20px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div[data-id="Personnage"] .hg_lastpost a:nth-of-type(2),
+div[data-id="Carnet du shinobi"] .hg_lastpost a:nth-of-type(2) {
+	position: absolute;
+	width: max-content;
+	font-size: 14px;
+	bottom: 24px;
+}
+
+div[data-id="Personnage"] .hg_lastpost .color-groups strong,
+div[data-id="Carnet du shinobi"] .hg_lastpost .color-groups strong {
+	padding-right: 4px;
+}
+
+div[data-id="Personnage"] .hg_lastpost,
+div[data-id="Carnet du shinobi"] .hg_lastpost {
+	display: inline-block;
+	text-transform: uppercase;
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	left: 24px;
+	font-family: 'Hind';
+	position: absolute;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	justify-items: start;
+	position: absolute;
+	left: 174px;
+	flex-direction: column-reverse;
+	bottom: 124px;
+	line-height: 8px;
+}
+
+div[data-id="Personnage"] .hg_cat_blokinfo,
+div[data-id="Carnet du shinobi"] .hg_cat_blokinfo {
+	width: 60%;
+	text-align: left;
+	position: absolute;
+	bottom: 282px;
+	height: fit-content;
+}
+
+div[data-id="Personnage"] .hg_cat_stats,
+div[data-id="Carnet du shinobi"] .hg_cat_stats {
+	background: var(--dark5);
+	position: absolute;
+	margin: 20px 0;
+	width: 100%;
+	bottom: 72px;
+	height: 100px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+div[data-id="Personnage"] .hg_cat_statinter,
+div[data-id="Carnet du shinobi"] .hg_cat_statinter {
+	display: none;
+}
+
+.Personnage,
+.Carnetdushinobi {
+	font-family: 'Hind';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 11px;
+	text-align: left;
+	letter-spacing: -0.02em;
+}
+
+div[data-id="Personnage"],
+div[data-id="Carnet du shinobi"] {
+	border-radius: 8px;
+	margin-bottom: 0px;
+	display: flex;
+	padding: 40px;
+	height: 440px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+div[data-id="Personnage"] .hg_cat_avatar,
+div[data-id="Carnet du shinobi"] .hg_cat_avatar {
+	overflow: hidden;
+	width: 40px;
+	border-width: 0;
+	outline: 6px solid #272727;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	left: 108px;
+	bottom: 124px;
+	bottom: 124px;
+	height: 40px;
+}
+
+div[data-id="Personnage"] #hg_sousfo,
+div[data-id="Carnet du shinobi"] #hg_sousfo {
+	font-size: 0px;
+	text-align: center;
+	transition: all 800ms;
+}
+
+div[data-id="Personnage"] #hg_sousfo a,
+div[data-id="Carnet du shinobi"] #hg_sousfo a {
+	color: var(--accent);
+	font-family: 'Hind';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	top: 340px;
+	background: var(--dark5);
+	padding: 4px;
+	border-radius: 2px;
+	border: 2px solid var(--dark2);
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 800ms;
+	overflow: hidden;
+}
+
+/** CATO RP **/
+div[data-id="Godaikoku"],
+div[data-id="Sato"],
+div[data-id="Yugakure"],
+div[data-id="Jima"],
+div[data-id="Jikukan"],
+div[data-id="Tengai"] {
+	margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+div[data-id="Godaikoku"] .hg_categories,
+div[data-id="Sato"] .hg_categories,
+div[data-id="Yugakure"] .hg_categories,
+div[data-id="Jima"] .hg_categories,
+div[data-id="Jikukan"] .hg_categories,
+div[data-id="Tengai"] .hg_categories {
+	background: #1a1a1a;
+	width: 1100px;
+	height: 300px;
+	margin-bottom: 16px;
+	display: -ms-grid;
+	display: grid;
+	position: relative;
+	overflow: hidden;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+div[data-id="Godaikoku"] .hg_cat_blokinfo,
+div[data-id="Sato"] .hg_cat_blokinfo,
+div[data-id="Yugakure"] .hg_cat_blokinfo,
+div[data-id="Jima"] .hg_cat_blokinfo,
+div[data-id="Jikukan"] .hg_cat_blokinfo,
+div[data-id="Tengai"] .hg_cat_blokinfo {
+	height: 300px;
+	padding: 32px;
+	width: 1100px;
+}
+
+div[data-id="Godaikoku"] .hg_cat_desc,
+div[data-id="Sato"] .hg_cat_desc,
+div[data-id="Yugakure"] .hg_cat_desc,
+div[data-id="Jima"] .hg_cat_desc,
+div[data-id="Jikukan"] .hg_cat_desc,
+div[data-id="Tengai"] .hg_cat_desc {
+	font-family: 'Hind';
+	font-style: normal;
+	height: auto;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: justify;
+}
+
+div[data-id="Godaikoku"] .hg_cat_statinter,
+div[data-id="Sato"] .hg_cat_statinter,
+div[data-id="Yugakure"] .hg_cat_statinter,
+div[data-id="Jima"] .hg_cat_statinter,
+div[data-id="Jikukan"] .hg_cat_statinter,
+div[data-id="Tengai"] .hg_cat_statinter {
+	text-transform: uppercase;
+	font: 7px roboto;
+	letter-spacing: 1px;
+	content: "\f4cb";
+	height: 24px;
+	width: 24px;
+	padding: 5px 0px;
+}
+
+div[data-id="Godaikoku"] .hg_cat_avatar,
+div[data-id="Sato"] .hg_cat_avatar,
+div[data-id="Yugakure"] .hg_cat_avatar,
+div[data-id="Jima"] .hg_cat_avatar,
+div[data-id="Jikukan"] .hg_cat_avatar,
+div[data-id="Tengai"] .hg_cat_avatar {
+	overflow: hidden;
+	width: 40px;
+	border-width: 0;
+	outline: 6px solid #272727;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	border-radius: 100%;
+	height: 40px;
+	left: 24px;
+	bottom: 32px;
+}
+
+div[data-id="Godaikoku"] .hg_lastpost a,
+div[data-id="Sato"] .hg_lastpost a,
+div[data-id="Yugakure"] .hg_lastpost a,
+div[data-id="Jima"] .hg_lastpost a,
+div[data-id="Jikukan"] .hg_lastpost a,
+div[data-id="Tengai"] .hg_lastpost a {
+	height: 20px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+div[data-id="Godaikoku"] .hg_lastpost,
+div[data-id="Sato"] .hg_lastpost,
+div[data-id="Yugakure"] .hg_lastpost,
+div[data-id="Jima"] .hg_lastpost,
+div[data-id="Jikukan"] .hg_lastpost,
+div[data-id="Tengai"] .hg_lastpost {
+	display: inline-block;
+	text-transform: uppercase;
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	left: 24px;
+	font-family: 'Hind';
+	position: absolute;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 10px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	justify-items: start;
+	position: absolute;
+	left: 94px;
+	flex-direction: column-reverse;
+	bottom: 32px;
+	line-height: 8px;
+}
+
+div[data-id="Godaikoku"] #hg_sousfo,
+div[data-id="Sato"] #hg_sousfo,
+div[data-id="Yugakure"] #hg_sousfo,
+div[data-id="Jima"] #hg_sousfo,
+div[data-id="Jikukan"] #hg_sousfo,
+div[data-id="Tengai"] #hg_sousfo {
+	font-size: 0px;
+	text-align: right;
+	transition: all 800ms;
+}
+
+div[data-id="Godaikoku"] #hg_sousfo a,
+div[data-id="Sato"] #hg_sousfo a,
+div[data-id="Yugakure"] #hg_sousfo a,
+div[data-id="Jima"] #hg_sousfo a,
+div[data-id="Jikukan"] #hg_sousfo a,
+div[data-id="Tengai"] #hg_sousfo a {
+	color: var(--accent);
+	font-family: 'Hind';
+	font-style: normal;
+	bottom: 124px;
+	right: 16px;
+	font-weight: 700;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background: var(--dark5);
+	padding: 4px;
+	border-radius: 2px;
+	border: 2px solid var(--dark2);
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 800ms;
+	overflow: hidden;
+}
+
+div[data-id="Godaikoku"] .hg_lastpost a:nth-of-type(2) {
+	position: absolute;
+	width: max-content;
+	font-size: 14px;
+	bottom: 24px;
+}
+
+div[data-id="Godaikoku"] .hg_cat_desc>img,
+div[data-id="Sato"] .hg_cat_desc>img,
+div[data-id="Yugakure"] .hg_cat_desc>img,
+div[data-id="Jima"] .hg_cat_desc>img,
+div[data-id="Jikukan"] .hg_cat_desc>img,
+div[data-id="Tengai"] .hg_cat_desc>img {
+	width: 816px;
+	height: 300px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 282px;
+	border-radius: 0;
+	mix-blend-mode: overlay;
+	-webkit-filter: grayscale(1) contrast(0.2);
+}
+
+.RP-desc {
+	width: 236px;
+    margin-top: 16px;
 }
 
 /* FOOTER */
