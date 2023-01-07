@@ -1,0 +1,172 @@
+
+
+
+
+/* MEMBER LIST */
+.lastvisit {
+	position: absolute;
+	top: 25px;
+}
+
+.panel p,
+.panel div.mes-txt {
+	font-size: 1.3rem;
+	margin-bottom: 18px;
+	word-break: break-all;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.content h2,
+.panel h2 {
+	font-family: Hind;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	color: var(--textcolor);
+	border-style: none;
+}
+
+.bg-member {
+	transform: skewX(-35deg);
+	background: var(--dark1);
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: -8px;
+	height: 56px;
+}
+
+.title_page_memberlist {
+	width: 100%;
+	font-family: 'Ninja Naruto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 37px;
+	color: var(--accent);
+	background-position: top center;
+	background-size: 100% auto;
+	padding: 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sous_titre_member {
+	font-family: 'Hind' !important;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #777777;
+}
+
+.memberlist_body {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 72px;
+	justify-content: center;
+}
+
+.listmember {
+	width: 298px;
+	margin: 5px;
+}
+
+.memberlist_name {
+	font-family: 'Ninja Naruto';
+	font-weight: 400;
+	display: flex;
+	font-size: 16px;
+	position: relative;
+	height: 48px;
+	z-index: 2;
+	top: 264px;
+	line-height: 15px;
+	text-align: center;
+	border-radius: 16px 16px 0 0;
+	text-transform: uppercase;
+	font-style: italic;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+}
+
+.infos_memberlist {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.vava_memberlist {
+	overflow: hidden;
+	height: 200px;
+	margin-top: 10px;
+	width: 200px;
+	outline: solid 8px var(--dark1);
+}
+
+.vava_memberlist img {
+	width: 100%;
+}
+
+.pasdidees {
+	width: 188px;
+	height: 150px;
+	padding: 10px 10px 0px 10px;
+}
+
+.contakt_member {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	font: 10px calibri;
+	color: var(--dark3);
+	font-family: 'Hind';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 19px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	top: 8px;
+	position: relative;
+	text-transform: uppercase;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/*CATO*/
+div[data-id="Godaikoku"] .hg_cat_desc>img,
+div[data-id="Sato"] .hg_cat_desc>img,
+div[data-id="Yugakure"] .hg_cat_desc>img,
+div[data-id="Jima"] .hg_cat_desc>img,
+div[data-id="Jikukan"] .hg_cat_desc>img,
+div[data-id="Tengai"] .hg_cat_desc>img {
+	width: 816px;
+	height: 300px;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 282px;
+	border-radius: 0;
+	mix-blend-mode: overlay;
+	-webkit-filter: grayscale(1) contrast(0.2);
+}
+
+.RP-desc {
+	width: 236px;
+    margin-top: 16px;
+}
