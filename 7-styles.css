@@ -1,3 +1,133 @@
+.totalsujets {
+    position: relative;
+    width: 100%;
+    border: 1px dashed #dadada;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: flex-end;
+    background: var(--dark4);
+    border: solid 6px var(--dark1);
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.titleettruc {
+    padding-left: 40px;
+}
+.titlesuj {
+    position: absolute;
+    flex-direction: column;
+    width: 400px;
+    line-height: 28px;
+    align-items: flex-start;
+}
+.titlesuj a {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+.descriptionsujet {
+    text-align: justify;
+    color: var(--textcolor);
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    font-size: 10px;
+    position: absolute;
+    top: 100px;
+    line-height: 19px;
+    text-align: left;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+.infosposter {
+    font-family: 'Hind';
+    display: flex;
+    font-style: normal;
+    position: relative;
+    font-weight: 700;
+    width: fit-content;
+    left: 390px;
+    box-shadow: none;
+    flex: 1 1 200px;
+    letter-spacing: 1.6px;
+    padding: 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 76%;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+.infosposter-author, .infosposter-lastpost, .infosposter-lastposttime {
+    padding: 8px 14px 8px 8px;
+    width: fit-content;
+}
+.infosposter-author a, .infosposter-lastpost a, .infosposter-lastposttime a {
+    border-bottom: 2px solid var(--dark3);
+}
+.lastvavasuj {
+    width: 80px;
+    border: 5px solid var(--dark1);
+    height: 80px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.lastvavasuj img {
+  width:100%;
+}
+.trukenbas {
+    float: left;
+    margin-right: -18px;
+    gap: 16;
+    padding: 5px 0px 0px 0px;
+    display: flex;
+}
+.trukenbas a {
+    background: var(--dark5);
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid var(--dark2);
+    font-family: 'Hind';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    box-shadow: none;
+    letter-spacing: 1.6px;
+    color: var(--accent);
+}
+.HGSJT_blockmoderation {
+    width: 100%;
+    margin: 20px auto;
+    font-family: 'Hind';
+    font-style: normal;
+    text-align: left;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background-color: #1a1a1a;
+    padding: 24px;
+    color: var(--accent);
+    font-weight: 600;
+}
+.HGSJT_blockmoderation a {
+    color: var(--accent);
+}
 /* MEMBER LIST */
 .lastvisit {
 	position: absolute;
