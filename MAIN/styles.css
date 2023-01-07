@@ -302,8 +302,7 @@ font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f520";font-size
   margin-bottom: -20px;
 }
 .it-header-tomoe-img {
-  animation: animName 60s linear infinite;
-  animation-direction: reverse;
+  animation: animName 60s linear infinite reverse;
   position: absolute;
   width: 100%;
   height: 100vh;
