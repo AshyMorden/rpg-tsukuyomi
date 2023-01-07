@@ -41,7 +41,9 @@ html > ::-webkit-scrollbar {
     --nukenin: #907AAB;
     --shinobi: #BD845C;
 }
-
+p {
+  font-family: 'Hind';
+}
 #page-header {
   z-index: 99 !important;
 }
