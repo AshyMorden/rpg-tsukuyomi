@@ -2971,9 +2971,10 @@ color: var(--accent);
   clear: both;
   height: fit-content;
   padding-bottom: 24px;
-  width: 64%;
-  left: 100;
+  width: 100%;
+  left: 0px;
   position: absolute;
+  background: var(--dark1);
   display: block;
   font-size: 10px;
   display: flex;
@@ -2984,4 +2985,16 @@ color: var(--accent);
 }
 .footerbar-system li {
   margin: 0 16px 0 0;
+}
+.footer-credits {
+  margin: 24px;
+  text-align: center;
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--accent);
+  height: 96px;
 }
