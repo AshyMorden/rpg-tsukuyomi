@@ -2984,7 +2984,7 @@ color: var(--accent);
   align-items: center;
 }
 .footer-credits {
-  margin: 24px;
+  margin: 24px!important;
   text-align: center;
   font-family: 'Hind';
   font-style: normal;
