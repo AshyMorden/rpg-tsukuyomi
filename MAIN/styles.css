@@ -2995,3 +2995,6 @@ color: var(--accent);
   color: var(--accent);
   height: 96px;
 }
+.footerbar-system li {
+  margin: none;
+}
