@@ -2983,9 +2983,6 @@ color: var(--accent);
   justify-content: space-between;
   align-items: center;
 }
-.footerbar-system li {
-  margin: 0 16px 0 0;
-}
 .footer-credits {
   margin: 24px;
   text-align: center;
