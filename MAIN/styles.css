@@ -2969,15 +2969,18 @@ color: var(--accent);
 .footerbar-system, .footerbar-user {
   color: var(--dark1);
   clear: both;
-  height: 40px;
-  padding: 0px;
+  height: fit-content;
+  padding-bottom: 24px;
+  width: 64%;
+  left: 100;
+  position: absolute;
   display: block;
-  font-size: 10px;
   font-size: 10px;
   display: flex;
   overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 .footerbar-system li {
   margin: 0 16px 0 0;
